@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Campers</title>
+</head>
+<body>
+    <h1>Formulario de Campers</h1>
+    <form id="camperForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <!-- Otros campos del formulario -->
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('camperForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const camperData = {};
+            for (const [key, value] of formData.entries()) {
+                camperData[key] = value;
+            }
+
+            try {
+                const response = await fetch('/api/campers', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(camperData),
+                });
+                if (response.ok) {
+                    console.log("Camper añadido correctamente.");
+                } else {
+                    console.error("Error al añadir el camper:", response.statusText);
+                }
+            } catch (error) {
+                console.error("Error al enviar la solicitud:", error);
+            }
+        });
+    </script>
+</body>
+</html>
