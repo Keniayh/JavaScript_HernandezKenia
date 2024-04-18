@@ -1,35 +1,35 @@
-const express = require('express');
-const fs = require('fs');
-const app = express();
-const PORT = 3000;
+// const express = require('express');
+// const fs = require('fs');
+// const app = express();
+// const PORT = 3000;
 
-app.use(express.json());
-app.use(express.static('public')); // Sirve archivos estáticos desde la carpeta 'public'
+// app.use(express.json());
+// app.use(express.static('public')); // Sirve archivos estáticos desde la carpeta 'public'
 
-app.post('/api/campers', (req, res) => {
-    const newCamper = req.body;
-    fs.readFile('campers.json', 'utf8', (err, data) => {
-        if (err) {
-            console.error(err);
-            res.status(500).send('Error al leer el archivo de campers.');
-            return;
-        }
-        let campers = JSON.parse(data);
-        campers.push(newCamper);
-        fs.writeFile('campers.json', JSON.stringify(campers), (err) => {
-            if (err) {
-                console.error(err);
-                res.status(500).send('Error al escribir en el archivo de campers.');
-                return;
-            }
-            res.status(200).send('Camper añadido correctamente.');
-        });
-    });
-});
+// app.post('/api/campers', (req, res) => {
+//     const newCamper = req.body;
+//     fs.readFile('campers.json', 'utf8', (err, data) => {
+//         if (err) {
+//             console.error(err);
+//             res.status(500).send('Error al leer el archivo de campers.');
+//             return;
+//         }
+//         let campers = JSON.parse(data);
+//         campers.push(newCamper);
+//         fs.writeFile('campers.json', JSON.stringify(campers), (err) => {
+//             if (err) {
+//                 console.error(err);
+//                 res.status(500).send('Error al escribir en el archivo de campers.');
+//                 return;
+//             }
+//             res.status(200).send('Camper añadido correctamente.');
+//         });
+//     });
+// });
 
-app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Servidor escuchando en el puerto ${PORT}`);
+// });
 
 
 // function addCampers() {
@@ -113,3 +113,29 @@ app.listen(PORT, () => {
 //     console.log('Server running at http://localhost:3000/');
 // });
 
+//----------------------------------------------JSON----------------------------------------------------------------------
+
+const cadenaJSON = '{"nombre: "pepito", "edad": 30}'
+
+
+//clon objeto
+
+const person = {
+    id: "1",
+    name: "joan",
+    age: 30,
+    address: {
+        city: "new york"
+    }
+};
+
+
+
+const clonedPerson = Object.assign({}, person);
+console.log(clonedPerson);
+
+//array
+
+// push, pop, toString, join, indexOf, lastIndexOf(),    
+//array.join() -> unir elementos o cadenas (, ) agrega coma y espacio.
+//toString.array()
