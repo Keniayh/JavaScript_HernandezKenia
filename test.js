@@ -115,27 +115,58 @@
 
 //----------------------------------------------JSON----------------------------------------------------------------------
 
-const cadenaJSON = '{"nombre: "pepito", "edad": 30}'
+// const cadenaJSON = '{"nombre: "pepito", "edad": 30}'
 
 
-//clon objeto
+// //clon objeto
 
-const person = {
-    id: "1",
-    name: "joan",
-    age: 30,
-    address: {
-        city: "new york"
-    }
-};
+// const person = {
+//     id: "1",
+//     name: "joan",
+//     age: 30,
+//     address: {
+//         city: "new york"
+//     }
+// };
 
 
 
-const clonedPerson = Object.assign({}, person);
-console.log(clonedPerson);
+// const clonedPerson = Object.assign({}, person);
+// console.log(clonedPerson);
 
 //array
 
 // push, pop, toString, join, indexOf, lastIndexOf(),    
 //array.join() -> unir elementos o cadenas (, ) agrega coma y espacio.
 //toString.array()
+
+// Parent class
+// class Vehicle {
+//     constructor(make, model, year) {
+//       this.make = make;
+//       this.model = model;
+//       this.year = year;
+//     }
+  
+//     displayDetails() {
+//       console.log(`Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`);
+//     }
+//   }
+  
+//   // Subclass
+//   class Car extends Vehicle {
+//     constructor(make, model, year, doors) {
+//       super(make, model, year);
+//       this.doors = doors;
+//     }
+  
+//     displayDetails() {
+//       super.displayDetails();
+//       console.log(`Number of Doors: ${this.doors}`);
+//     }
+//   }
+  
+//   // Example usage
+//   const myCar = new Car('Toyota', 'Camry', 2022, 4);
+//   myCar.displayDetails();
+  
