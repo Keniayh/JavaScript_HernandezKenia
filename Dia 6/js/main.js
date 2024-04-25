@@ -97,4 +97,75 @@ class BankAccount {
 
 const account1 = new BankAccount(1993298737, 30000);
 const account2 = new BankAccount(1272635662, 50000);
-/////
+
+
+account1.depositMoney(100);
+account2.withdrawMoney(100);
+
+account1.displayDetails();
+account2.displayDetails();
+
+//5. 
+class Figura {
+    constructor(width, height) {
+      this.width = width;
+      this.height = height;
+    }
+    area() {
+      return this.width * this.height;
+    }
+    displayDetails() {
+        console.log(`Area: ${this.area()}`);
+    }
+}
+
+class Circle extends Figura {
+    constructor(radius) {
+      super(radius * 2, radius * 2);
+      this.radius = radius; 
+    }
+    area() {
+      return Math.PI * this.radius * this.radius;
+    }
+}
+
+class Triangle extends Figura {
+    constructor(base, height) {
+      super(base, height);
+      this.base = base; 
+      this.height = height; 
+    }
+    area() {
+      return (this.base * this.height) / 2; 
+    }
+}
+
+const circle1 = new Circle(10);
+const triangle1 = new Triangle(10, 10);
+
+circle1.displayDetails();
+triangle1.displayDetails();
+
+//6. 
+class A {
+    constructor(arg) {
+      this.propiedadA = arg;
+    }
+}
+  
+class B extends A {
+    constructor(arg) {
+        super(arg);
+    }
+}
+
+class C extends B {
+    constructor(arg) {
+        super(arg);
+    }
+}
+
+const CC = new C("Hola");
+
+console.log(CC.propiedadA); 
+ 
