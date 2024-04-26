@@ -1,3 +1,13 @@
+//Enter fuction
+var input = document.getElementById("pokemonId");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("enter").click();
+    }
+});
+/////////////
+
 function fetchPokemon() {
     let xhr = new XMLHttpRequest();
     let pokemonID = document.getElementById('pokemonId').value;
