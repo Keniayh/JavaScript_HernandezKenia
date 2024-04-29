@@ -29,16 +29,3 @@ function fetchPokemon() {
     };
     xhr.send();
 }
-
-function displayPokemon() {
-    let pokemonInfo = document.getElementById("pokeInfo");
-
-    if (DataTransfer.response == "error") {
-        pokemonInfo.innerHTML = `<p>Error: ${data.error}</p>`;
-    }
-    else {
-        pokemonInfo.innerHTML = `
-        <p>${response.name}</p>
-        `;
-    }
-}

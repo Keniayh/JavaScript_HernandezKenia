@@ -38,6 +38,10 @@ box-shadow: 0px 0px var(--main-color);
 transform: translate(3px, 3px);
 }
 
+#Enter {
+    display: none;
+}
+
 #before{
     top: 73vh;
     left: 40vw;
@@ -98,4 +102,9 @@ p{
 }
 div{
     position: absolute;
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+    top: 21vw;
+    margin: 0 2vw 0 0;
 }
