@@ -1,10 +1,15 @@
-#424242
-#211a1f
+https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1: Esta URL te permite obtener una nueva baraja de cartas que ya está mezclada. 
+Podrías usar esto para obtener una baraja y luego extraer cartas de ella para tu juego de memoria.
 
-input
-#211a1f
+https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2: Esta URL te permite extraer un número específico de cartas de una baraja identificada por su ID. 
+Una vez que obtienes una nueva baraja usando la primera URL, puedes usar esta para extraer cartas de ella durante el juego.
 
+https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/: Esta URL te permite barajar una baraja específica identificada por su ID. 
+Puedes usar esto si necesitas volver a barajar la baraja durante el juego.
 
-#b2b6b7 letra
-#384047
+https://deckofcardsapi.com/api/deck/new/: Esta URL te permite obtener una nueva baraja de cartas, pero no está mezclada. 
+Podrías usar esto si prefieres mezclar la baraja manualmente antes de extraer cartas para el juego de memoria.
 
+https://fonts.google.com/specimen/Fredericka+the+Great?preview.text=Memory&preview.size=121
+https://fonts.google.com/specimen/VT323?preview.text=Memory&preview.size=121
+https://fonts.google.com/specimen/Almendra+SC?preview.text=Memory&preview.size=121
