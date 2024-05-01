@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    margin: 0;
+}
+body {
+    background-image: url('../storage/img/luz.gif');
+    background-size: 100% 100%; 
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memory{
+    width: 60vw;
+    height: 75vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+
+/* Estilos generales de la carta */
+.card {
+    width: 6.6vw; /* Ancho de la carta */
+    height: 18vh; /* Alto de la carta */
+    background-image: url(https://deckofcardsapi.com/static/img/back.png); /* Reverso de la carta */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    border-radius: 5px; /* Borde redondeado */
+    margin: 5px; /* Margen entre las cartas */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima de la carta *//* Transición suave al voltear la carta */
+}
+  
+/* Estilos cuando la carta está volteada */
+.card.flipped {
+    transform: rotateY(180deg); /* Rotar la carta 180 grados al estar volteada */
+}
+ 
+/* Estilos cuando la carta está seleccionada */
+.card.selected {
+    pointer-events: none; /* Deshabilitar clics en la carta mientras está seleccionada */
+}
+
+/* Estilos cuando la carta está emparejada */
+.card.matched {
+    opacity: 0; /* Hacer la carta invisible cuando está emparejada */
+}
