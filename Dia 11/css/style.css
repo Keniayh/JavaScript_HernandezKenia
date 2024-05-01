@@ -1,9 +1,91 @@
-.card {
-    width: 100px;
-    height: 150px;
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    background-image: url('../storage/img/casa.webp');
+    background-size: 100% 100%; 
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    justify-items: center;
+}
+
+.jupoca:nth-child(1){
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: baseline;
+    align-self: self-end;
+}
+.puerta:nth-child(2) {
+    grid-column: 1; /* Primer columna */
+    grid-row: 2; /* Segunda fila */
+}
+.playNow:nth-child(3) {
+    grid-column: 2; /* Primer columna */
+    grid-row: 2; /* Segunda fila */
+}
+
+/*Hijos del grid*/
+
+.jupoca{
+    font-family: "VT323";
+    font-size: 8vw;
+    color: wheat;
+    margin: 0 0 15vh 0; 
+
+}
+
+/* ////////////////////////////////// */
+
+a{
+    font-family: "VT323";
+}
+
+.button {
     border: 1px solid black;
-    display: inline-block;
-    margin: 5px;
-    text-align: center;
+    padding: 1.3vh 1.2vw; /* Equivalente a padding: 12px 30px */
+    border-radius: 15px; /* Equivalente a border-radius: 15px */
+    background-color: #a35f3e;
+    font-weight: bolder;
+    font-size: 1.5vw; /* Equivalente a font-size: 24px */
+    box-shadow: 0px 0px 1px;
+    transform-origin: top left;
+    transform: rotate(357deg);
+    transition-duration: .3s;
     cursor: pointer;
+    margin: 7vh 1vw 0 0; /* Equivalente a margin: 7px 0 0 0 */
+    font-family: "VT323";
+    color: wheat;
+}
+
+  
+.button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
+    border: 1px solid black;
+}
+  
+.button:active {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 1px;
+}
+    
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición de 0.5 segundos */
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
 }
