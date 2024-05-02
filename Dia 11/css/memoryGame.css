@@ -57,3 +57,53 @@ body {
 .card.matched {
     opacity: 0; /* Hacer la carta invisible cuando está emparejada */
 }
+
+.playNow{
+    position: absolute;
+}
+.button {
+    border: 1px solid black;
+    padding: 1.3vh 1.2vw; /* Equivalente a padding: 12px 30px */
+    border-radius: 15px; /* Equivalente a border-radius: 15px */
+    background-color: #a35f3e;
+    font-weight: bolder;
+    font-size: 1.5vw; /* Equivalente a font-size: 24px */
+    box-shadow: 0px 0px 1px;
+    transition-duration: .3s;
+    cursor: pointer;
+    margin: 7vh 1vw 0 0; /* Equivalente a margin: 7px 0 0 0 */
+    font-family: "VT323";
+    color: wheat;
+}
+
+  
+.button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 1px rgb(0, 0, 0);
+    border: 1px solid black;
+}
+  
+.button:active {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 1px;
+}
+    
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición de 0.5 segundos */
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+}
+
+#l{
+    left: 5vw;
+    top: 70vh;
+}
+
+#p{
+    left: 5vw;
+    top: 80vh;
+}
