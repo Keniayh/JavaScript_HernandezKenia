@@ -41,9 +41,16 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 
+img{
+  width: 4vw;
+  border-radius: 50px;
+}
+
 #img{
     position: absolute;
-    top: 20vw;
+    top: 35vh;
+    left: 47vw;
+    width: 6vw;
 }
 
 
@@ -67,7 +74,7 @@ body{
 }
 
 .tooltip button {
-  background-color: #db3434;
+  background-color: #ffffff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -78,7 +85,7 @@ body{
 }
 
 .tooltip button:hover {
-  background-color: #b92929;
+  background-color: #b1ffd1;
   transform: scale(1.05);
 }
 
@@ -90,8 +97,8 @@ body{
 .tooltiptext {
   visibility: hidden;
   width: 160px;
-  background-color: #333;
-  color: #fff;
+  background-color: #ebffe4;
+  color: #000000;
   text-align: center;
   border-radius: 8px;
   padding: 5px;
@@ -112,6 +119,6 @@ body{
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #333 transparent transparent transparent;
+  border-color: #b4f3d6 transparent transparent transparent;
 }
 

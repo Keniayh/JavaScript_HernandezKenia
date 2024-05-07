@@ -21,36 +21,36 @@ function mostrarPersona(data) {
 
     personInfo.innerHTML = `
     <div class="name">
-            <img src="" alt="hi" id="img">
+            <img src= ${data.results[0].picture.medium} alt="hi" id="img">
             </div>
             <div class="icons">
                 <div class="tooltip">
-                    <button><img src="" alt="name"></button>
+                    <button><img src="./img/card_icons.png" alt="name"></button>
                     <div class="tooltiptext"> Hi my name is: <br></br> ${data.results[0].name.first} ${data.results[0].name.last}</div>
                 </div>
                 <div class="tooltip">
-                    <button><img src="" alt="email"></button>
+                    <button><img src="./img/card_icons (1).png" alt="email"></button>
                     <div class="tooltiptext">My email address is: <br></br> ${data.results[0].email}<br></br></div>
                 </div>
                 <div class="tooltip">
-                    <button><img src="" alt="birthday"></button>
-                    <div class="tooltiptext">You Hovered Me!</div>
+                    <button><img src="./img/card_icons (2).png" alt="birthday"></button>
+                    <div class="tooltiptext">My birthday is: <br></br> ${data.results[0].dob.date}</div>
                 </div>
                 <div class="tooltip">
-                    <button><img src="" alt="address"> </button>
+                    <button><img src="./img/card_icons (3).png" alt="address"> </button>
                     <div class="tooltiptext">My address is: <br></br> ${data.results[0].location.street.number} ${data.results[0].location.street.name}</div>
                 </div>
                 <div class="tooltip">
-                    <button><img src="" alt="number"></button>
+                    <button><img src="./img/card_icons (5).png" alt="number"></button>
                     <div class="tooltiptext">My address is: <br></br> ${data.results[0].phone}</div>
                 </div>
                 <div class="tooltip">
-                    <button><img src="" alt="password"></button>
-                <div class="tooltiptext">You Hovered Me!</div>
+                    <button><img src="./img/card_icons (4).png" alt="password"></button>
+                <div class="tooltiptext">My password is: <br></br> ${data.results[0].login.password}<br></br></div>
             </div>
     </div>
     `;
 }
 
 
-console.log("hi")
+console.log("hi");
