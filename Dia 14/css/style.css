@@ -1,0 +1,40 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.fondo{
+    background-color: rgb(48, 48, 48);
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.per{
+    width: 40vw;
+    height: 15vh;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.container{
+   width: 100vw;
+   height: 60vh;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+.info{
+    width: 40vw;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: grid;
+}
