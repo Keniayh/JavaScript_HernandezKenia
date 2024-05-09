@@ -71,6 +71,15 @@ function addEventListenerToLiElements() {
 
     // Agrega un event listener a cada elemento
     elementos.forEach(function(elemento) {
+        // Verifica si el elemento ya tiene la clase "active" al cargar la página
+        if (elemento.classList.contains("active")) {
+            // Muestra los datos del elemento activo automáticamente
+            var dataTitle = elemento.getAttribute("data-title");
+            var dataValue = elemento.getAttribute("data-value");
+            infoDisplay.innerHTML = "<p>" + dataTitle + "</p>"  + "<h3>" + dataValue + "</h3>";
+        }
+
+        // Agrega un event listener para el evento "mouseover"
         elemento.addEventListener("mouseover", function() {
             // Desactiva todos los elementos
             elementos.forEach(function(e) {
@@ -78,7 +87,6 @@ function addEventListenerToLiElements() {
             });
             // Activa solo el elemento actual
             elemento.classList.add("active");
-
             // Muestra los datos del elemento activo
             var dataTitle = elemento.getAttribute("data-title");
             var dataValue = elemento.getAttribute("data-value");
@@ -86,4 +94,5 @@ function addEventListenerToLiElements() {
         });
     });
 }
-fetchUser()
+
+fetchUser();
