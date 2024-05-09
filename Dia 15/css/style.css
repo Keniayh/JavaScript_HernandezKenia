@@ -5,6 +5,15 @@ body {
   margin: 0;
 }
 
+html{
+  font-family: sans-serif;
+}
+
+p{
+  color: #999;
+  font-size: 1vw;
+}
+
 .fondo {
   background-color: rgb(48, 48, 48);
   width: 100vw;
@@ -37,6 +46,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .hoal{
@@ -56,11 +67,10 @@ body {
 }
 
 .options{
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
   background: #fff;
   border-radius: 3px;
-  box-shadow: 0 0 1px rgba(0,0,0,.5);
   overflow: hidden;
   text-align: center;
   z-index: 5;

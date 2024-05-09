@@ -52,7 +52,7 @@ function displayUser(dato) {
         `;
         buttom.innerHTML = `           
             <ul class="values_list horizontal_center" id="values_list">
-                <li data-title="Hi, My name is" data-value="${nombre}" data-label="name" class=" " id="elemento"></li>
+                <li data-title="Hi, My name is" data-value="${nombre}" data-label="name" class="active" id="elemento"></li>
                 <li data-title="My email address is" data-value="${correo}" data-label="email" class=" " id="elemento"></li>
                 <li data-title="My birthday is" data-value="${fechaFinal}" data-label="birthday" class=" " id="elemento"></li>
                 <li data-title="My address is" data-value="${direccion}" data-label="address" class=" " id="elemento"></li>
@@ -82,7 +82,7 @@ function addEventListenerToLiElements() {
             // Muestra los datos del elemento activo
             var dataTitle = elemento.getAttribute("data-title");
             var dataValue = elemento.getAttribute("data-value");
-            infoDisplay.innerHTML = "<p>" + dataTitle + "<br></br> " + dataValue + "</p>";
+            infoDisplay.innerHTML = "<p>" + dataTitle + "</p>"  + "<h3>" + dataValue + "</h3>";
         });
     });
 }
